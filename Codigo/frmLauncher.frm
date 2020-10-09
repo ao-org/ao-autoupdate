@@ -6,63 +6,64 @@ Begin VB.Form frmLauncher
    BackColor       =   &H80000010&
    BorderStyle     =   0  'None
    Caption         =   "Launcher - AO Libre"
-   ClientHeight    =   7680
+   ClientHeight    =   9000
    ClientLeft      =   6585
    ClientTop       =   3720
-   ClientWidth     =   10080
+   ClientWidth     =   11985
    Icon            =   "frmLauncher.frx":0000
    LinkTopic       =   "Form1"
    Picture         =   "frmLauncher.frx":C84A
-   ScaleHeight     =   7680
-   ScaleWidth      =   10080
+   ScaleHeight     =   9000
+   ScaleWidth      =   11985
    StartUpPosition =   2  'CenterScreen
    Begin AOLibreAutoUpdate.uAOCheckbox CMDSombras 
-      Height          =   345
-      Left            =   4200
+      Height          =   225
+      Left            =   4440
       TabIndex        =   7
-      Top             =   960
-      Width           =   345
-      _ExtentX        =   609
-      _ExtentY        =   609
+      Top             =   840
+      Width           =   210
+      _ExtentX        =   370
+      _ExtentY        =   397
       CHCK            =   0   'False
       ENAB            =   -1  'True
-      PICC            =   "frmLauncher.frx":FBD00
+      PICC            =   "frmLauncher.frx":45F9A
    End
    Begin AOLibreAutoUpdate.uAOCheckbox CMDParticulas 
-      Height          =   345
-      Left            =   2040
+      Height          =   225
+      Left            =   1440
       TabIndex        =   13
       Top             =   360
-      Width           =   345
-      _ExtentX        =   609
-      _ExtentY        =   609
+      Width           =   210
+      _ExtentX        =   370
+      _ExtentY        =   397
       CHCK            =   0   'False
       ENAB            =   -1  'True
-      PICC            =   "frmLauncher.frx":FE2B2
+      PICC            =   "frmLauncher.frx":46EB2
    End
    Begin AOLibreAutoUpdate.uAOCheckbox CMDVSync 
-      Height          =   345
-      Left            =   6240
+      Height          =   225
+      Left            =   7560
       TabIndex        =   15
-      Top             =   960
-      Width           =   345
-      _ExtentX        =   609
-      _ExtentY        =   609
+      Top             =   360
+      Width           =   210
+      _ExtentX        =   370
+      _ExtentY        =   397
       CHCK            =   0   'False
       ENAB            =   -1  'True
-      PICC            =   "frmLauncher.frx":100864
+      PICC            =   "frmLauncher.frx":47DCA
    End
    Begin RichTextLib.RichTextBox RichTextBoxLog 
       Height          =   975
-      Left            =   480
+      Left            =   720
       TabIndex        =   6
-      Top             =   4560
-      Width           =   8895
-      _ExtentX        =   15690
+      Top             =   7080
+      Width           =   10455
+      _ExtentX        =   18441
       _ExtentY        =   1720
       _Version        =   393217
       BackColor       =   4210752
-      TextRTF         =   $"frmLauncher.frx":102E16
+      Enabled         =   -1  'True
+      TextRTF         =   $"frmLauncher.frx":48CE2
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Segoe UI Symbol"
          Size            =   8.25
@@ -75,7 +76,7 @@ Begin VB.Form frmLauncher
    End
    Begin AOLibreAutoUpdate.uAOButton BtnSalir 
       Height          =   495
-      Left            =   9240
+      Left            =   11160
       TabIndex        =   2
       Top             =   360
       Width           =   495
@@ -83,12 +84,12 @@ Begin VB.Form frmLauncher
       _ExtentY        =   873
       TX              =   "X"
       ENAB            =   -1  'True
-      FCOL            =   7314354
+      FCOL            =   16777215
       OCOL            =   16777215
-      PICE            =   "frmLauncher.frx":102E9A
-      PICF            =   "frmLauncher.frx":1038C4
-      PICH            =   "frmLauncher.frx":104586
-      PICV            =   "frmLauncher.frx":105518
+      PICE            =   "frmLauncher.frx":48D66
+      PICF            =   "frmLauncher.frx":49EEA
+      PICH            =   "frmLauncher.frx":4B88E
+      PICV            =   "frmLauncher.frx":4D922
       BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
          Size            =   12
@@ -107,28 +108,28 @@ Begin VB.Form frmLauncher
       _Version        =   393216
    End
    Begin InetCtlsObjects.Inet InetGithubAutoupdate 
-      Left            =   6480
-      Top             =   3000
+      Left            =   8880
+      Top             =   1200
       _ExtentX        =   1005
       _ExtentY        =   1005
       _Version        =   393216
    End
    Begin vbalProgBarLib6.vbalProgressBar ProgressBar1 
       Height          =   540
-      Left            =   240
+      Left            =   1200
       TabIndex        =   1
-      Top             =   6120
-      Width           =   9585
-      _ExtentX        =   16907
+      Top             =   8160
+      Width           =   9345
+      _ExtentX        =   16484
       _ExtentY        =   953
-      Picture         =   "frmLauncher.frx":10641A
+      Picture         =   "frmLauncher.frx":4F986
       BackColor       =   0
       ForeColor       =   16777152
       Appearance      =   0
       BorderStyle     =   0
       BarColor        =   16777215
       BarForeColor    =   12648384
-      BarPicture      =   "frmLauncher.frx":106436
+      BarPicture      =   "frmLauncher.frx":4F9A2
       BarPictureMode  =   0
       BackPictureMode =   0
       ShowText        =   -1  'True
@@ -145,20 +146,20 @@ Begin VB.Form frmLauncher
    End
    Begin AOLibreAutoUpdate.uAOButton BtnJugar 
       Height          =   735
-      Left            =   7800
+      Left            =   9480
       TabIndex        =   3
-      Top             =   3720
-      Width           =   1815
-      _ExtentX        =   3201
+      Top             =   6120
+      Width           =   1575
+      _ExtentX        =   2778
       _ExtentY        =   1296
       TX              =   "Jugar"
       ENAB            =   -1  'True
-      FCOL            =   7314354
+      FCOL            =   16777215
       OCOL            =   16777215
-      PICE            =   "frmLauncher.frx":10BDEA
-      PICF            =   "frmLauncher.frx":10C814
-      PICH            =   "frmLauncher.frx":10D4D6
-      PICV            =   "frmLauncher.frx":10E468
+      PICE            =   "frmLauncher.frx":55356
+      PICF            =   "frmLauncher.frx":564DA
+      PICH            =   "frmLauncher.frx":57E7E
+      PICV            =   "frmLauncher.frx":59F12
       BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "Lucida Console"
          Size            =   20.25
@@ -171,20 +172,20 @@ Begin VB.Form frmLauncher
    End
    Begin AOLibreAutoUpdate.uAOButton LblSpanish 
       Height          =   735
-      Left            =   8160
+      Left            =   720
       TabIndex        =   4
-      Top             =   1320
+      Top             =   6120
       Width           =   1575
       _ExtentX        =   2778
       _ExtentY        =   1296
       TX              =   "Castellano"
       ENAB            =   -1  'True
-      FCOL            =   7314354
+      FCOL            =   16777215
       OCOL            =   16777215
-      PICE            =   "frmLauncher.frx":10F36A
-      PICF            =   "frmLauncher.frx":10FD94
-      PICH            =   "frmLauncher.frx":110A56
-      PICV            =   "frmLauncher.frx":1119E8
+      PICE            =   "frmLauncher.frx":5BF76
+      PICF            =   "frmLauncher.frx":5D0FA
+      PICH            =   "frmLauncher.frx":5EA9E
+      PICV            =   "frmLauncher.frx":60B32
       BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
          Size            =   12
@@ -197,20 +198,20 @@ Begin VB.Form frmLauncher
    End
    Begin AOLibreAutoUpdate.uAOButton LblEnglish 
       Height          =   735
-      Left            =   8160
+      Left            =   2400
       TabIndex        =   5
-      Top             =   2280
+      Top             =   6120
       Width           =   1575
       _ExtentX        =   2778
       _ExtentY        =   1296
       TX              =   "English"
       ENAB            =   -1  'True
-      FCOL            =   7314354
+      FCOL            =   16777215
       OCOL            =   16777215
-      PICE            =   "frmLauncher.frx":1128EA
-      PICF            =   "frmLauncher.frx":113314
-      PICH            =   "frmLauncher.frx":113FD6
-      PICV            =   "frmLauncher.frx":114F68
+      PICE            =   "frmLauncher.frx":62B96
+      PICF            =   "frmLauncher.frx":63D1A
+      PICH            =   "frmLauncher.frx":656BE
+      PICV            =   "frmLauncher.frx":67752
       BeginProperty FONT {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
          Size            =   12
@@ -222,28 +223,28 @@ Begin VB.Form frmLauncher
       EndProperty
    End
    Begin AOLibreAutoUpdate.uAOCheckbox CMDSoundsFxs 
-      Height          =   345
-      Left            =   4200
+      Height          =   225
+      Left            =   4440
       TabIndex        =   8
       Top             =   360
-      Width           =   345
-      _ExtentX        =   609
-      _ExtentY        =   609
+      Width           =   210
+      _ExtentX        =   370
+      _ExtentY        =   397
       CHCK            =   0   'False
       ENAB            =   -1  'True
-      PICC            =   "frmLauncher.frx":115E6A
+      PICC            =   "frmLauncher.frx":697B6
    End
    Begin AOLibreAutoUpdate.uAOCheckbox CMDEffectSound 
-      Height          =   345
-      Left            =   2040
+      Height          =   225
+      Left            =   1440
       TabIndex        =   9
       Top             =   840
-      Width           =   345
-      _ExtentX        =   609
-      _ExtentY        =   609
+      Width           =   210
+      _ExtentX        =   370
+      _ExtentY        =   397
       CHCK            =   0   'False
       ENAB            =   -1  'True
-      PICC            =   "frmLauncher.frx":11841C
+      PICC            =   "frmLauncher.frx":6A6CE
    End
    Begin VB.Label lblParticulas 
       BackStyle       =   0  'Transparent
@@ -259,7 +260,7 @@ Begin VB.Form frmLauncher
       EndProperty
       ForeColor       =   &H0000FFFF&
       Height          =   375
-      Left            =   2400
+      Left            =   2040
       TabIndex        =   16
       Top             =   360
       Width           =   3495
@@ -278,10 +279,10 @@ Begin VB.Form frmLauncher
       EndProperty
       ForeColor       =   &H0000FFFF&
       Height          =   375
-      Left            =   6720
+      Left            =   7920
       TabIndex        =   12
-      Top             =   960
-      Width           =   3495
+      Top             =   360
+      Width           =   2895
    End
    Begin VB.Label lblShadow 
       BackStyle       =   0  'Transparent
@@ -297,9 +298,9 @@ Begin VB.Form frmLauncher
       EndProperty
       ForeColor       =   &H0000FFFF&
       Height          =   375
-      Left            =   4680
+      Left            =   4920
       TabIndex        =   11
-      Top             =   960
+      Top             =   840
       Width           =   3495
    End
    Begin VB.Label lblSoundsFxs 
@@ -316,7 +317,7 @@ Begin VB.Form frmLauncher
       EndProperty
       ForeColor       =   &H0000FFFF&
       Height          =   375
-      Left            =   4680
+      Left            =   4920
       TabIndex        =   14
       Top             =   360
       Width           =   3495
@@ -335,7 +336,7 @@ Begin VB.Form frmLauncher
       EndProperty
       ForeColor       =   &H0000FFFF&
       Height          =   375
-      Left            =   2520
+      Left            =   2160
       TabIndex        =   10
       Top             =   840
       Width           =   3495
@@ -355,9 +356,9 @@ Begin VB.Form frmLauncher
       EndProperty
       ForeColor       =   &H000000C0&
       Height          =   375
-      Left            =   840
+      Left            =   360
       TabIndex        =   0
-      Top             =   720
+      Top             =   600
       Width           =   975
    End
 End
